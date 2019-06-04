@@ -1,0 +1,11 @@
+${AnsiColor.BRIGHT_YELLOW}
+|\     /||\     /|       ApplicationName: ${spring.application.name}
+| )   ( || )   ( |       Port: ${server.port}
+| (___) || |   | |       Type: ${spring.profiles.active}
+|  ___  || |   | |
+| (   ) || |   | |
+| )   ( || (___) |
+|/     \|(_______)
+
+${AnsiColor.BRIGHT_RED}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}

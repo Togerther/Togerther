@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mybatisplugdemo.mapper.ApplyInterfaceFlowMapper">
+  <resultMap id="BaseResultMap" type="com.example.mybatisplugdemo.entity.ApplyInterfaceFlow">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="apply_no" jdbcType="VARCHAR" property="applyNo" />
+    <result column="flow_code" jdbcType="VARCHAR" property="flowCode" />
+    <result column="approve_name" jdbcType="VARCHAR" property="approveName" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="node_code" jdbcType="VARCHAR" property="nodeCode" />
+    <result column="approve_status" jdbcType="INTEGER" property="approveStatus" />
+    <result column="approve_desc" jdbcType="VARCHAR" property="approveDesc" />
+    <result column="close_mark" jdbcType="INTEGER" property="closeMark" />
+    <result column="start_mark" jdbcType="INTEGER" property="startMark" />
+    <result column="parent_codes" jdbcType="VARCHAR" property="parentCodes" />
+    <result column="node_level" jdbcType="INTEGER" property="nodeLevel" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="DATE" property="updateTime" />
+  </resultMap>
+</mapper>

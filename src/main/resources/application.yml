@@ -1,0 +1,34 @@
+server:
+  port: 80
+spring:
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+  datasource:
+    url: jdbc:mysql://192.168.40.14:3306/ys_gateway_test?characterEncoding=UTF-8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  profiles:
+    active: @activatedProperties@
+  application:
+    name: wanli
+  banner:
+    location: banner/banner.txt
+mybatis-plus:
+  mapper-locations: classpath*:/mapping/*.xml
+  type-aliases-package: com.example.mybatisplugdemo.entity
+
+#pagehelper分页插件
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+  offset-as-page-num: true
+  row-bounds-with-count: true
+logging:
+  level:
+    com.example.mybatisplugdemo.mapper: trace
+#  config: classpath:log/logback-${spring.profiles.active}.xml

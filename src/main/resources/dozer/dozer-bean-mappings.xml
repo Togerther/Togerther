@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <configuration>
+        <stop-on-errors>false</stop-on-errors>
+        <date-format>yyyy-MM-dd HH:mm:ss</date-format>
+        <wildcard>true</wildcard>
+    </configuration>
+
+    <mapping>
+        <class-a>com.example.mybatisplugdemo.entity.RegWebserviceInfo</class-a>
+        <class-b>com.example.mybatisplugdemo.entity.RegInterface</class-b>
+        <field>
+            <a>url</a>
+            <b>provideUrl</b>
+        </field>
+        <field>
+            <a>regId</a>
+            <b>id</b>
+        </field>
+        <field-exclude>
+            <a>id</a>
+            <b>id</b>
+        </field-exclude>
+    </mapping>
+
+</mappings>
