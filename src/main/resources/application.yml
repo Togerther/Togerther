@@ -32,3 +32,4 @@ logging:
   level:
     com.example.mybatisplugdemo.mapper: trace
 #  config: classpath:log/logback-${spring.profiles.active}.xml
+

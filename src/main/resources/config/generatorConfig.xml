@@ -64,7 +64,7 @@
                selectByExampleQueryId="false">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>-->
-        <table tableName="apply_interface_flow"
+        <table tableName="app_info"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">

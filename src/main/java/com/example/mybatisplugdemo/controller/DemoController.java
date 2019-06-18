@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.UUID;
 
 /**
  * @ClassNameDemoController
@@ -29,5 +30,14 @@ public class DemoController {
         PageHelper.startPage(1,10);
         List<ApplyInterfaceFlow> all = applyInterfaceFlowService.findAll();
         return JSONObject.toJSONString(all);
+    }
+
+    @RequestMapping("insert")
+    public Integer insert(){
+        ApplyInterfaceFlow applyInterfaceFlow = new ApplyInterfaceFlow();
+        applyInterfaceFlow.setApplyNo("21454237yhsaga");
+        applyInterfaceFlow.setFlowCode("sefeatggt4ewtw");
+        applyInterfaceFlowService.add(applyInterfaceFlow);
+        return applyInterfaceFlow.getId();
     }
 }

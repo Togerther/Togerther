@@ -3,7 +3,7 @@ package com.example.mybatisplugdemo.entity;
 import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "apply_interface_flow")
+@Table(name = "apply_flow")
 public class ApplyInterfaceFlow {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

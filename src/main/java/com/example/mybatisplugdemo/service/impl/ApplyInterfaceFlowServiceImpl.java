@@ -21,6 +21,7 @@ public class ApplyInterfaceFlowServiceImpl extends AbstractService<ApplyInterfac
     @Override
     public List<ApplyInterfaceFlow> findAll() {
         Condition condition = createCondition();
+
         return findByExample(condition);
     }
 }
